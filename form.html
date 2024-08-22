@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>User Personal Information</h2>
+        <form>
+            <div>
+                <label for="full-name">Enter your full name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div>
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirm-password">Enter your confirm password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
